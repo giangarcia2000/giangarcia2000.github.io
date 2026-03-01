@@ -16,45 +16,44 @@ body {
     width: 900px;
     margin: 60px auto;
     display: flex;
-    align-items: flex-start; /* forces top alignment */
+    align-items: flex-start;
 }
 
 .left {
-    width: 250px;
-    padding-right: 40px;
+    width: 300px;
 }
 
 .left h1 {
     font-size: 32px;
     font-weight: normal;
     line-height: 1.1;
-    margin: 0;
+    margin: 0 0 20px 0;
 }
 
 .left img {
-    width: 180px;
-    margin-top: 20px;
+    width: 240px; /* larger dog */
     display: block;
 }
 
 .right {
-    width: 600px;
+    width: 560px;
     font-size: 14px;
     line-height: 1.6;
+    position: relative;
 }
 
-.right p {
-    margin: 0 0 10px 0;
+.update {
+    margin-bottom: 160px; /* pushes nav downward */
 }
 
 .nav {
     list-style: none;
     padding: 0;
-    margin: 20px 0 0 0;
+    margin: 0;
 }
 
 .nav li {
-    margin-bottom: 6px;
+    margin-bottom: 8px;
 }
 
 .nav a {
@@ -80,18 +79,22 @@ body {
     </div>
 
     <div class="right">
-        <p><strong>March 1, 2026</strong></p>
-        <p>
-        Practiced open tunings today. Recording a short demo tomorrow.
-        </p>
 
-<ul class="nav">
-    <li><a href="index.html">home</a></li>
-    <li><a href="news.html">news</a></li>
-    <li><a href="discography.html">discography</a></li>
-    <li><a href="pictures.html">pictures</a></li>
-    <li><a href="contact.html">contact</a></li>
-</ul>
+        <div class="update">
+            <p><strong>March 1, 2026</strong></p>
+            <p>
+            Practiced open tunings today. Recording a short demo tomorrow.
+            </p>
+        </div>
+
+        <ul class="nav">
+            <li><a href="index.html">home</a></li>
+            <li><a href="news.html">news</a></li>
+            <li><a href="discography.html">discography</a></li>
+            <li><a href="pictures.html">pictures</a></li>
+            <li><a href="contact.html">contact</a></li>
+        </ul>
+
     </div>
 
 </div>
