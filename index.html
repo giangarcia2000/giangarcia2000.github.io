@@ -16,26 +16,25 @@ body {
     width: 900px;
     margin: 60px auto;
     display: flex;
-    align-items: flex-start;
-    gap: 35px; /* tighter spacing between dog and content */
+    gap: 40px;
 }
 
 .left {
-    width: 300px; /* reduced from 340 */
+    width: 300px;
 }
 
 .left h1 {
-    font-size: 32px;
+    font-size: 34px;
     font-weight: normal;
     line-height: 1.1;
+    text-align: center;
     margin: 0 0 40px 0;
-    text-align: center; /* centered */
 }
 
 .left img {
     width: 240px;
     display: block;
-    margin: 20px auto 0 auto; /* visually centered under name */
+    margin: 20px auto 0 auto;
 }
 
 .right {
@@ -44,21 +43,16 @@ body {
     line-height: 1.6;
 }
 
-.update {
-    margin-bottom: 120px;
-}
-
 .section-title {
+    color: #cc0000;
     font-weight: bold;
-    letter-spacing: 1px;
-    margin-bottom: 10px;
-    font-size: 13px;
+    margin-bottom: 20px;
 }
 
 .nav {
     list-style: none;
     padding: 0;
-    margin: 40px 0 0 0;
+    margin-top: 60px;
 }
 
 .nav li {
@@ -75,6 +69,28 @@ body {
 .nav a:hover {
     text-decoration: underline;
 }
+
+.album-grid {
+    display: flex;
+    gap: 20px;
+}
+
+.album-grid img {
+    width: 200px;
+}
+
+.small-note {
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.form-field {
+    margin-bottom: 12px;
+}
+
+input[type="text"] {
+    width: 220px;
+}
 </style>
 </head>
 
@@ -82,32 +98,9 @@ body {
 
 <div class="container">
 
-    <div class="left">
-        <h1>Gian<br>Garcia</h1>
-        <img src="20260301_Jules_350px_edited.png" alt="Jules">
-    </div>
-
-    <div class="right">
-
-        <div class="update">
-            <p><strong>March 1, 2026</strong></p>
-            <p>
-            Welcome to the creation of our new page. It was created March 1, 2026.
-            </p>
-        </div>
-
-        <ul class="nav">
-            <li><a href="index.html">home</a></li>
-            <li><a href="news.html">news</a></li>
-            <li><a href="entries.html">entries</a></li>
-            <li><a href="discography.html">discography</a></li>
-            <li><a href="pictures.html">pictures</a></li>
-            <li><a href="contact.html">contact</a></li>
-        </ul>
-
-    </div>
-
+<div class="left">
+    <h1>Gian<br>Garcia</h1>
+    <img src="20260301_Jules_350px_edited.png" alt="Jules">
 </div>
 
-</body>
-</html>
+<div class="right">
