@@ -1,38 +1,65 @@
-<div class="right">
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Gian Garcia — Winter 26</title>
 
-<h2 class="section-title">WINTER 26</h2>
+<style>
+body {
+    background: #f4f4f4;
+    font-family: Georgia, serif;
+    color: #222;
+    margin: 0;
+}
 
-<div class="gallery">
-    <a href="images/winter26/photo1.jpg" target="_blank">
-        <img src="images/winter26/photo1.jpg" alt="">
-    </a>
+.container {
+    width: 900px;
+    margin: 60px auto;
+    display: flex;
+    gap: 40px;
+}
 
-    <a href="images/winter26/photo2.jpg" target="_blank">
-        <img src="images/winter26/photo2.jpg" alt="">
-    </a>
+.left {
+    width: 300px;
+}
 
-    <a href="images/winter26/photo3.jpg" target="_blank">
-        <img src="images/winter26/photo3.jpg" alt="">
-    </a>
+.left h1 {
+    font-size: 34px;
+    font-weight: normal;
+    line-height: 1.1;
+    text-align: center;
+    margin: 0 0 40px 0;
+}
 
-    <!-- repeat as needed -->
-</div>
+.left img {
+    width: 240px;
+    display: block;
+    margin: 20px auto 0 auto;
+}
 
-<ul class="nav">
-    <li><a href="index.html">home</a></li>
-    <li><a href="news.html">news</a></li>
-    <li><a href="entries.html">entries</a></li>
-    <li><a href="discography.html">discography</a></li>
-    <li><a href="pictures.html">pictures</a></li>
-</ul>
+.right {
+    width: 520px;
+    font-size: 14px;
+    line-height: 1.5;
+}
 
-</div>
+.section-title {
+    color: #cc0000;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Gallery */
 
 .gallery {
     display: grid;
-    grid-template-columns: repeat(9, 1fr);
-    gap: 4px;
+    grid-template-columns: repeat(11, 1fr);
+    gap: 3px;
     margin-top: 10px;
+}
+
+.gallery a {
+    display: block;
 }
 
 .gallery img {
@@ -40,3 +67,72 @@
     height: auto;
     display: block;
 }
+
+/* Navigation */
+
+.nav {
+    list-style: none;
+    padding: 0;
+    margin-top: 40px;
+}
+
+.nav li {
+    margin-bottom: 4px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="left">
+        <h1>Gian<br>Garcia</h1>
+        <img src="20260301_Jules_350px_edited.png" alt="Jules">
+    </div>
+
+    <div class="right">
+
+        <h2 class="section-title">WINTER 26</h2>
+
+        <div class="gallery">
+            <a href="images/winter26/photo1.jpg" target="_blank">
+                <img src="images/winter26/photo1.jpg" alt="">
+            </a>
+
+            <a href="images/winter26/photo2.jpg" target="_blank">
+                <img src="images/winter26/photo2.jpg" alt="">
+            </a>
+
+            <a href="images/winter26/photo3.jpg" target="_blank">
+                <img src="images/winter26/photo3.jpg" alt="">
+            </a>
+
+            <!-- Add more images below following same pattern -->
+        </div>
+
+        <ul class="nav">
+            <li><a href="index.html">home</a></li>
+            <li><a href="news.html">news</a></li>
+            <li><a href="entries.html">entries</a></li>
+            <li><a href="discography.html">discography</a></li>
+            <li><a href="pictures.html">pictures</a></li>
+        </ul>
+
+    </div>
+
+</div>
+
+</body>
+</html>
