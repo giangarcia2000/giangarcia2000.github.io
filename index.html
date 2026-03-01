@@ -17,10 +17,11 @@ body {
     margin: 60px auto;
     display: flex;
     align-items: flex-start;
+    gap: 35px; /* tighter spacing between dog and content */
 }
 
 .left {
-    width: 340px;
+    width: 300px; /* reduced from 340 */
 }
 
 .left h1 {
@@ -28,13 +29,13 @@ body {
     font-weight: normal;
     line-height: 1.1;
     margin: 0 0 40px 0;
-    text-align: right;   /* name aligned right */
+    text-align: center; /* centered */
 }
 
 .left img {
     width: 240px;
     display: block;
-    margin-left: 0;      /* anchor image left */
+    margin: 20px auto 0 auto; /* visually centered under name */
 }
 
 .right {
@@ -50,11 +51,8 @@ body {
 .section-title {
     font-weight: bold;
     letter-spacing: 1px;
-    margin-bottom: 20px;
-}
-
-.news-item {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+    font-size: 13px;
 }
 
 .nav {
@@ -64,7 +62,7 @@ body {
 }
 
 .nav li {
-    margin-bottom: 4px;   /* tightened spacing */
+    margin-bottom: 4px;
 }
 
 .nav a {
@@ -96,18 +94,6 @@ body {
             <p>
             Welcome to the creation of our new page. It was created March 1, 2026.
             </p>
-        </div>
-
-        <div class="section-title">NEWS</div>
-
-        <div class="news-item">
-            <p><strong>March 1, 2026</strong></p>
-            <p>Recorded a short demo using open tunings explored last week.</p>
-        </div>
-
-        <div class="news-item">
-            <p><strong>February 25, 2026</strong></p>
-            <p>Completed a draft of a new piece. Considering alternate arrangement.</p>
         </div>
 
         <ul class="nav">
