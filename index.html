@@ -9,12 +9,14 @@ body {
     background: #f4f4f4;
     font-family: Georgia, serif;
     color: #222;
+    margin: 0;
 }
 
 .container {
     width: 900px;
     margin: 60px auto;
     display: flex;
+    align-items: flex-start; /* forces top alignment */
 }
 
 .left {
@@ -26,11 +28,13 @@ body {
     font-size: 32px;
     font-weight: normal;
     line-height: 1.1;
+    margin: 0;
 }
 
 .left img {
     width: 180px;
     margin-top: 20px;
+    display: block;
 }
 
 .right {
@@ -39,10 +43,14 @@ body {
     line-height: 1.6;
 }
 
+.right p {
+    margin: 0 0 10px 0;
+}
+
 .nav {
     list-style: none;
     padding: 0;
-    margin-top: 30px;
+    margin: 20px 0 0 0;
 }
 
 .nav li {
@@ -64,24 +72,24 @@ body {
 
 <div class="container">
 
-<div class="left">
-    <h1>Gian<br>Garcia</h1>
-    <img src="20260301_Jules_350px_edited.png" alt="Jules">
-</div>
+    <div class="left">
+        <h1>Gian<br>Garcia</h1>
+        <img src="20260301_Jules_350px_edited.png" alt="Jules">
+    </div>
 
-<div class="right">
-    <p><strong>March 1, 2026</strong></p>
-    <p>
-    Practiced open tunings today. Recording a short demo tomorrow.
-    </p>
+    <div class="right">
+        <p><strong>March 1, 2026</strong></p>
+        <p>
+        Practiced open tunings today. Recording a short demo tomorrow.
+        </p>
 
-    <ul class="nav">
-        <li><a href="#">home</a></li>
-        <li><a href="#">news</a></li>
-        <li><a href="#">songs</a></li>
-        <li><a href="#">contact</a></li>
-    </ul>
-</div>
+        <ul class="nav">
+            <li><a href="#">home</a></li>
+            <li><a href="#">news</a></li>
+            <li><a href="#">songs</a></li>
+            <li><a href="#">contact</a></li>
+        </ul>
+    </div>
 
 </div>
 
