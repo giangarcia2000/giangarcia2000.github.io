@@ -27,14 +27,14 @@ body {
     font-size: 32px;
     font-weight: normal;
     line-height: 1.1;
-    margin: 0 0 30px 0;  /* more breathing room */
-    text-align: center;
+    margin: 0 0 40px 0;
+    text-align: right;   /* name aligned right */
 }
 
 .left img {
     width: 240px;
     display: block;
-    margin-left: auto;  /* pushes image to the right edge */
+    margin-left: 0;      /* anchor image left */
 }
 
 .right {
@@ -44,17 +44,27 @@ body {
 }
 
 .update {
-    margin-bottom: 160px;
+    margin-bottom: 120px;
+}
+
+.section-title {
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.news-item {
+    margin-bottom: 30px;
 }
 
 .nav {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 40px 0 0 0;
 }
 
 .nav li {
-    margin-bottom: 8px;
+    margin-bottom: 4px;   /* tightened spacing */
 }
 
 .nav a {
@@ -88,14 +98,26 @@ body {
             </p>
         </div>
 
-<ul class="nav">
-    <li><a href="index.html">home</a></li>
-    <li><a href="news.html">news</a></li>
-    <li><a href="entries.html">entries</a></li>
-    <li><a href="discography.html">discography</a></li>
-    <li><a href="pictures.html">pictures</a></li>
-    <li><a href="contact.html">contact</a></li>
-</ul>
+        <div class="section-title">NEWS</div>
+
+        <div class="news-item">
+            <p><strong>March 1, 2026</strong></p>
+            <p>Recorded a short demo using open tunings explored last week.</p>
+        </div>
+
+        <div class="news-item">
+            <p><strong>February 25, 2026</strong></p>
+            <p>Completed a draft of a new piece. Considering alternate arrangement.</p>
+        </div>
+
+        <ul class="nav">
+            <li><a href="index.html">home</a></li>
+            <li><a href="news.html">news</a></li>
+            <li><a href="entries.html">entries</a></li>
+            <li><a href="discography.html">discography</a></li>
+            <li><a href="pictures.html">pictures</a></li>
+            <li><a href="contact.html">contact</a></li>
+        </ul>
 
     </div>
 
